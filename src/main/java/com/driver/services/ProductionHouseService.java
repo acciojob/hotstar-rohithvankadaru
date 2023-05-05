@@ -19,7 +19,7 @@ public class ProductionHouseService {
         productionHouse.setName(productionHouseEntryDto.getName());
 
         productionHouseRepository.save(productionHouse);
-        return  null;
+        return  productionHouse.getId();
     }
 
 }
