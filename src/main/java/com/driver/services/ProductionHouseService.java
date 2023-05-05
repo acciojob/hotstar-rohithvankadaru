@@ -18,8 +18,8 @@ public class ProductionHouseService {
         ProductionHouse productionHouse = new ProductionHouse();
         productionHouse.setName(productionHouseEntryDto.getName());
 
-        productionHouseRepository.save(productionHouse);
-        return  productionHouse.getId();
+        ProductionHouse addedProductionHouse = productionHouseRepository.save(productionHouse);
+        return  addedProductionHouse.getId();
     }
 
 }
